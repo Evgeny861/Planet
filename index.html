@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Space X</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <img src="./img/name.png" alt="logo" class="img">
+                <img src="./img/menu-button.png" class="burger hidden-large" alt="">
+            </div>
+            <ul class="header-ul hidden-small">
+                <li class="header-nav"><a href="#">Главная</a></li>
+                <li class="header-nav"><a href="#">Технология</a></li>
+                <li class="header-nav"><a href="#">График полетов</a></li>
+                <li class="header-nav"><a href="#">Гарантии</a></li>
+                <li class="header-nav"><a href="#">О компании</a></li>
+                <li class="header-nav"><a href="#">Контакты</a></li>
+            </ul> 
+        </div>
+        <nav class="popup-menu hidden-large">
+            <div class="close-menu-btn">
+                <img src="./img/delete.png" alt="close" class="close">
+            </div>
+            <ul>
+                <li class="scroll"><a href="#">Главная</a></li>
+                <li class="scroll"><a href="#">Технология</a></li>
+                <li class="scroll"><a href="#">График полетов</a></li>
+                <li class="scroll"><a href="#">Гарантии</a></li>
+                <li class="scroll"><a href="#">О компании</a></li>
+                <li class="scroll"><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section">
+            <div class="left-part">
+                <div class="travel">
+                <h2>Путешествие</h2>
+                <small>На красную планету</small>
+            </div>
+            <div class="line">
+                <div class="button">
+                    <button class="line-button">Начать путешествие</button>
+                </div>
+                <img src="img/stripe.png" alt="Полоса">
+            </div>
+            
+            </div>
+            <div class="right-part">
+                <div class="first-square square ">
+                    <div class="name-square">мы</div>
+                    <div class="number-square">1</div>
+                    <div class="footer-square">на рынке</div>
+                </div>
+                <div class="second-square square ">
+                    <div class="name-square">гарантируем</div>
+                    <div class="number-square">50%</div>
+                    <div class="footer-square">безопасности</div>
+                </div>
+                <div class="third-square square ">
+                    <div class="name-square">календарик за</div>
+                    <div class="number-square">2001г.</div>
+                    <div class="footer-square">в подарок</div>
+                </div>
+                <div class="fourth-square square ">
+                    <div class="name-square">путешествие</div>
+                    <div class="number-square">597</div>
+                    <div class="footer-square">дней</div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+
+    <script>
+        const burgerMenu = () => {
+            document.querySelector('.burger').addEventListener('click', event => {
+                document.querySelector('.popup-menu').style.display = 'block'
+            }) 
+            document.querySelector('.close').addEventListener('click', event => {
+                document.querySelector('.popup-menu').style.display = 'none'
+            })
+        }
+        burgerMenu()
+    </script>
+</body>
+</html>
